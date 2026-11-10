@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Tienda Tech - Taller GitHub</title>
+    <!-- CSS Externo -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font Awesome para Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header class="navbar">
+        <div class="logo">
+            <i class="fa-solid fa-laptop-code"></i>
+            <span>TechStore</span>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="cart-icon-container" id="cart-toggle">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span id="cart-count">0</span>
+        </div>
+    </header>
+
+    <!-- Banner Hero -->
+    <section class="hero">
+        <h1>Bienvenidos a TechStore</h1>
+        <a href="#productos" class="btn-primary">Ver Productos</a>
+    </section>
+
+    <!-- Contenedor Principal de Productos -->
+    <main class="container" id="productos">
+        <h2>Nuestros Productos</h2>
+        <div class="grid-products" id="product-list">
+            <!-- Las cards se generan dinámicamente con JS -->
+        </div>
+    </main>
+
+    <!-- Modal / Drawer de Carrito -->
+    <div class="cart-modal" id="cart-modal">
+        <div class="cart-content">
+            <div class="cart-header">
+                <h3>Tu Carrito</h3>
+                <button id="close-cart">&times;</button>
+            </div>
+            <div id="cart-items" class="cart-items">
+                <p class="empty-msg">El carrito está vacío</p>
+            </div>
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <span>Total:</span>
+                    <span id="cart-total-price">$0</span>
+                </div>
+                <button class="btn-checkout" id="btn-checkout">Finalizar Compra</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2026 TechStore</p>
+    </footer>
+
+    <!-- JavaScript Externo -->
+    <script src="js/app.js"></script>
+</body>
+</html>
